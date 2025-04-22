@@ -20,7 +20,7 @@ Questions:
 
 db_course_conversions.sql – the file contains the database for the project.
 
-**Part 1: Create the Subquery**
+## **Part 1: Create the Subquery**
 
 Import the db_course_conversions database—stored in the db_course_conversions.sql file. Refresh the Schemas section, db_course_conversion database appears in the the list. It has three tables on student_engagement, student_info, and student_purchases. 
 Apply the USE db_course_conversion; statement to make it the default (current) database.
@@ -109,7 +109,7 @@ GROUP BY e.student_id
 HAVING first_date_purchased IS NULL
 OR first_date_watched <= first_date_purchased;
 ```
-**Part 2: Create the Main Query**
+## **Part 2: Create the Main Query**
 
 Surround the subquery created previously in parentheses and give it an alias, a.
 
@@ -254,7 +254,7 @@ HAVING first_date_purchased IS NULL
 ) a;  -- Alias the subquery as 'a' for use in the main query
 ```
 
-**Part 3: Interpretation**
+## **Part 3: Interpretation**
 
 First, let's consider the conversion rate and compare this metric to industry benchmarks or historical data. The fraction of students who purchase monthly, quarterly, or annual subscriptions from those who watch a lecture is about 11%, for every 100 students who come to the 365 platform, roughly 11 out of them purchase a subscription. 
 
